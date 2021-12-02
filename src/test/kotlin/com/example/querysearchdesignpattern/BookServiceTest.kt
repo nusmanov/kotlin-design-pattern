@@ -14,8 +14,6 @@ internal class BookServiceTest {
 
         val parseFilter = testRequest.split("&")
 
-        val queryStrategies = mutableMapOf<CategorySupportedFilterEnums, QueryStrategy>()
-        // queryStrategies.put(CategorySupportedFilterEnums.OBJECT_TYPE,  )
         val list = mutableListOf<FilterTest>()
         val all = mutableListOf<Pair<String, String>>()
 
@@ -36,5 +34,3 @@ internal class BookServiceTest {
         println("OK")
     }
 }
-
-data class QueryStrategy(val foo: String)
