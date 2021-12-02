@@ -1,4 +1,4 @@
-package com.example.querysearchdesignpattern
+package com.example.playground
 
 data class QueryFilterDto(val pagination: Pagination, val countAll: Int, val orderBy: OrderBy)
 

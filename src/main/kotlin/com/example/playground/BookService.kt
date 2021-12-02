@@ -1,4 +1,4 @@
-package com.example.querysearchdesignpattern
+package com.example.playground
 
 import org.jetbrains.exposed.sql.Op
 import org.jetbrains.exposed.sql.SqlExpressionBuilder
