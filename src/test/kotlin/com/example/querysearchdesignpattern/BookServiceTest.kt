@@ -9,8 +9,8 @@ internal class BookServiceTest {
     @Test
     fun createBook() {
 
-        val testRequest = "/api/v1/Category?offset=0&embed=&countAll=true&limit=50&objectType=Task&emptyState=false".substringAfter("?")
-
+        val testRequest =
+            "/api/v1/Category?offset=0&embed=&countAll=true&limit=50&objectType=Task&emptyState=false".substringAfter("?")
 
         val parseFilter = testRequest.split("&")
 
@@ -27,7 +27,6 @@ internal class BookServiceTest {
             if (CategorySupportedFilterEnums.values().map { x -> x.value }.contains(key))
                 list.add(FilterTest(CategorySupportedFilterEnums.buildFromValue(key), value))
         }
-
 
         println(all)
         println(list)
